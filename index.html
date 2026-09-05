@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TwinWorld · ECCV 2026</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    min-height: 100vh;
+    background: #f5f7fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    padding: 32px 20px;
+  }
+
+  .card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px 32px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+    text-align: center;
+  }
+
+  .tag {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #165BCA;
+    margin-bottom: 12px;
+  }
+
+  h1 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #111820;
+    margin-bottom: 6px;
+    letter-spacing: -0.5px;
+  }
+
+  .venue {
+    font-size: 14px;
+    color: #8a9bab;
+    margin-bottom: 36px;
+  }
+
+  .divider {
+    width: 40px;
+    height: 3px;
+    background: #165BCA;
+    border-radius: 2px;
+    margin: 0 auto 36px;
+  }
+
+  .link-btn {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #f5f7fa;
+    border: 1.5px solid #e8edf2;
+    border-radius: 14px;
+    padding: 18px 20px;
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 14px;
+    transition: border-color 0.15s, box-shadow 0.15s, background 0.15s;
+  }
+  .link-btn:hover {
+    border-color: #165BCA;
+    box-shadow: 0 2px 12px rgba(22,91,202,0.12);
+    background: #fff;
+  }
+  .link-btn:last-of-type { margin-bottom: 0; }
+
+  .icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 22px;
+  }
+  .icon-li { background: #0077b5; }
+  .icon-web { background: #165BCA; }
+
+  .link-text { text-align: left; flex: 1; }
+  .link-label {
+    font-size: 15px;
+    font-weight: 700;
+    color: #111820;
+    display: block;
+    margin-bottom: 2px;
+  }
+  .link-sub {
+    font-size: 13px;
+    color: #8a9bab;
+  }
+
+  .arrow {
+    font-size: 18px;
+    color: #c5d0db;
+  }
+
+  footer {
+    margin-top: 28px;
+    font-size: 12px;
+    color: #b0bec9;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="tag">ECCV 2026 · TwinWorld Workshop</div>
+    <h1>TwinWorld</h1>
+    <p class="venue">DTM-to-DSM with Conditional Latent Diffusion</p>
+    <div class="divider"></div>
+
+    <a class="link-btn" href="https://www.linkedin.com/in/debwashis/" target="_blank" rel="noopener">
+      <div class="icon icon-li">💼</div>
+      <div class="link-text">
+        <span class="link-label">Debwashis Borman</span>
+        <span class="link-sub">First Author · LinkedIn</span>
+      </div>
+      <span class="arrow">›</span>
+    </a>
+
+    <a class="link-btn" href="https://dpanangian.com" target="_blank" rel="noopener">
+      <div class="icon icon-web">🌐</div>
+      <div class="link-text">
+        <span class="link-label">Daniel Panangian</span>
+        <span class="link-sub">Supervisor · More Projects</span>
+      </div>
+      <span class="arrow">›</span>
+    </a>
+  </div>
+
+  <footer>Scan the QR code at our ECCV 2026 poster</footer>
+</body>
+</html>
